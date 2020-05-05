@@ -28,3 +28,40 @@ address{
     margin:0px;
     color:#0f0f0f;
 }
+
+.no-bullets>li{
+    list-style-type: none;
+}
+
+.navbar-brand{
+    color: aliceblue;
+}
+
+.navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    color: #D1C4E9;
+}
+
+.navbar-nav>.active>a{
+    color: aliceblue;
+}
+
+.navbar-nav>a:hover{
+    color: aliceblue;
+}
+
+
+.navbar-brand:hover{
+    color: aliceblue;
+}
+
+body{
+    padding: 50px 0px 0px 0px;
+    z-index: 10;
+}
+
+.navbar-dark{
+    background-color: #512DA8;
+}   
