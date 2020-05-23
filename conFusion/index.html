@@ -35,12 +35,15 @@
     <header class ="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-9">
+                <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="image-fluid">
+                </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                    <button class = "button1 btn-block align-items-center" ><a href="#reserve">Reservation</a></button>
                 </div>
             </div>
         </div>
@@ -69,9 +72,15 @@
             <div class="col-12 col-sm-4 md-3">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class = "col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            <div class = "col col-sm order-sm-last col-md">
+                <div class="media">
+                    <img class="d-flex ml-3 img-thumbnail align-self-center"
+                        src="img/buffet.png" alt="buffet">
+                    <div class="media-body">
+                        <h2 class = "mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -91,7 +100,44 @@
                         
                 </div>
             </div>
-        </div>    
+        </div>
+        
+        <div class="row row-content align-items-center">
+            <div class="col-sm-8 offset-sm-2">
+                <div class="card">
+                    <h3 class="card-header reserve align-items-center text-white"><a id = "reserve">Reserve a Table</a></h3>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-sm-6">Number of Guests</dt>
+                            <dd class="col-sm-6">
+                                <input type="radio" id="1" name="Guests" value="1">
+                                <label>1 </label>
+                                <input type="radio" id="2" name="Guests" value="2">
+                                <label>2 </label>
+                                <input type="radio" id="3" name="Guests" value="3">
+                                <label>3 </label>
+                                <input type="radio" id="4" name="Guests" value="4">
+                                <label>4 </label>
+                                <input type="radio" id="5" name="Guests" value="5">
+                                <label>5 </label>
+                                <input type="radio" id="6" name="Guests" value="6">
+                                <label>6 </label>
+                            </dd>
+                            <dt class="col-sm-6">Date and Time</dt>
+                            <dd class="col-sm-6">
+                                <div class= "row">
+                                <input class="col-sm-2 offset-sm-2" type="form" id="date" placeholder="Date">
+                                <input type="form" id="Time" placeholder="Time">
+                                </div>  
+                            </dd>
+                            <dt class="align-self-center">
+                                <button class= "submit">Reserve</button>
+                            </dt>
+                        </dl>   
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class = "footer">
